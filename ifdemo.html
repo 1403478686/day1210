@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- 引入vue的核心外部文件 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Document</title>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="radio" value="lin" v-model="show"/>林书豪
+        <input type="radio" value="zhu" v-model="show"/>朱一龙
+        <input type="radio" value="qiao" v-model="show"/>乔碧螺
+        <img v-if="show=='lin'" style="width:200px;height:150px;"src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3740875015,2869728347&fm=26&gp=0.jpg" />
+        <img v-else-if="show=='zhu'" style="width:200px;height:150px;"src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575977945166&di=f2db57a3c7c95cd0be4ee7287b2d40a7&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D1265565667%2C1931244720%26fm%3D214%26gp%3D0.jpg
+        <img v-else-if="show=='qiao'" style="width:200px;height:150px;"src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575977890109&di=b7506bdeeed2104e2c65677bf577defd&imgtype=0&src=http%3A%2F%2Fwww.boruisz.com%2Fimages%2Fnfwwo4zomzxwg5ltfzrw4%2Fupload%2Fbj%2F32736%2Fb_327352430.jpg"/>
+        <img v-else style="width:200px;height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576572748&di=a9f7ef10080985ce8fafdca6b1474c24&imgtype=jpg&er=1&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fb3b33a4ceae6388576ca5022b871c1f9a9a13af678a2-9S81ba_fw658"/>
+        </div>
+        <script>
+        var app=new Vue({
+            el:"#app",
+                data:{
+                     show:'false',
+                     name:""
+                }
+            });
+            </script>
+</body>
+</html>
